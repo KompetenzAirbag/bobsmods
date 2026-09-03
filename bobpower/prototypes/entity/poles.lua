@@ -1,4 +1,6 @@
 if settings.startup["bobmods-power-poles"].value == true then
+  data.raw["electric-pole"]["medium-electric-pole"].next_ugprade = "bob-medium-electric-pole-2"
+
   data:extend({
     util.merge({
       data.raw["electric-pole"]["medium-electric-pole"],
@@ -8,6 +10,7 @@ if settings.startup["bobmods-power-poles"].value == true then
         max_health = 150,
         maximum_wire_distance = 11,
         supply_area_distance = 4.5,
+        next_upgrade = "bob-medium-electric-pole-3"
       },
     }),
 
@@ -19,6 +22,7 @@ if settings.startup["bobmods-power-poles"].value == true then
         max_health = 200,
         maximum_wire_distance = 13,
         supply_area_distance = 5.5,
+        next_upgrade = "bob-medium-electric-pole-4"
       },
     }),
 
@@ -35,6 +39,7 @@ if settings.startup["bobmods-power-poles"].value == true then
   })
 
   data.raw["electric-pole"]["big-electric-pole"].fast_replaceable_group = "electric-pole"
+  data.raw["electric-pole"]["big-electric-pole"].next_ugprade = "bob-big-electric-pole-2"
 
   data:extend({
     util.merge({
@@ -45,6 +50,7 @@ if settings.startup["bobmods-power-poles"].value == true then
         max_health = 225,
         maximum_wire_distance = 40,
         supply_area_distance = 2,
+        next_upgrade = "bob-big-electric-pole-3"
       },
     }),
 
@@ -56,6 +62,7 @@ if settings.startup["bobmods-power-poles"].value == true then
         max_health = 300,
         maximum_wire_distance = 50,
         supply_area_distance = 2,
+        next_upgrade = "bob-big-electric-pole-4"
       },
     }),
 
@@ -72,6 +79,7 @@ if settings.startup["bobmods-power-poles"].value == true then
   })
 
   data.raw["electric-pole"]["substation"].fast_replaceable_group = "electric-pole"
+  data.raw["electric-pole"]["substation"].next_upgrade = "bob-substation-2"
 
   data:extend({
     util.merge({
@@ -82,6 +90,7 @@ if settings.startup["bobmods-power-poles"].value == true then
         max_health = 300,
         maximum_wire_distance = 24,
         supply_area_distance = 12,
+        next_upgrade = "bob-substation-3"
       },
     }),
 
@@ -93,6 +102,7 @@ if settings.startup["bobmods-power-poles"].value == true then
         max_health = 400,
         maximum_wire_distance = 30,
         supply_area_distance = 15,
+        next_upgrade = "bob-substation-4"
       },
     }),
 
